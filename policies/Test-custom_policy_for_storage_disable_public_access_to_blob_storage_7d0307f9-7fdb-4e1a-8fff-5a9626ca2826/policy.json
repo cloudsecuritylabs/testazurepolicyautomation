@@ -1,11 +1,11 @@
 {
  "properties": {
-  "displayName": "Test-custom policy for storage disable public access to blob storage-final",
+  "displayName": "Test-custom policy for storage disable public access to blob storage",
   "policyType": "Custom",
   "mode": "Indexed",
   "description": "Test-custom policy for storage disable public access to blob storage",
   "metadata": {
-   "version": "1.0.1",
+   "version": "1.0.0",
    "category": "Test-custom",
    "deprecated": false,
    "createdBy": "e4b31f4d-daaa-4f8f-bc8f-248b53004737",
@@ -28,7 +28,7 @@
     ]
    },
    "then": {
-    "effect": "deny"
+    "effect": "audit"
    }
   }
  },
