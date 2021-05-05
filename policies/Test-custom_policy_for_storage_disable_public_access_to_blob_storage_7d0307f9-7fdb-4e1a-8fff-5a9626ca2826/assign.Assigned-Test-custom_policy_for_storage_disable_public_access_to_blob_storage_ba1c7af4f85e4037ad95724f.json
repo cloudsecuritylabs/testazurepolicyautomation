@@ -1,0 +1,25 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Assigned-Test-custom policy for storage disable public access to blob storage",
+  "policyDefinitionId": "/subscriptions/db1e31e0-b9ce-4b6e-b4d7-d800f47ec09f/providers/Microsoft.Authorization/policyDefinitions/7d0307f9-7fdb-4e1a-8fff-5a9626ca2826",
+  "scope": "/subscriptions/db1e31e0-b9ce-4b6e-b4d7-d800f47ec09f",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Ankan Basu",
+   "parameterScopes": {},
+   "createdBy": "e4b31f4d-daaa-4f8f-bc8f-248b53004737",
+   "createdOn": "2021-04-28T04:58:38.7265265Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/db1e31e0-b9ce-4b6e-b4d7-d800f47ec09f/providers/Microsoft.Authorization/policyAssignments/ba1c7af4f85e4037ad95724f",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "ba1c7af4f85e4037ad95724f"
+}

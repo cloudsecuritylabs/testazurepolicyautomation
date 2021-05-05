@@ -1,0 +1,32 @@
+name: manage-azure-policy-68c82a27
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'policies/Test-custom_policy_for_storage_disable_public_access_to_blob_storage_7d0307f9-7fdb-4e1a-8fff-5a9626ca2826/**'
+#      - .github/workflows/manage-azure-policy-68c82a27.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_68c82a27}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policies/Test-custom_policy_for_storage_disable_public_access_to_blob_storage_7d0307f9-7fdb-4e1a-8fff-5a9626ca2826/**

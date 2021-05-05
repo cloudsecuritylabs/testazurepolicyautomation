@@ -1,0 +1,38 @@
+{
+ "properties": {
+  "displayName": "Test-custom policy for storage disable public access to blob storage",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Test-custom policy for storage disable public access to blob storage",
+  "metadata": {
+   "version": "1.0.0",
+   "category": "Test-custom",
+   "deprecated": false,
+   "createdBy": "e4b31f4d-daaa-4f8f-bc8f-248b53004737",
+   "createdOn": "2021-04-28T04:56:45.2411335Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "type",
+      "equals": "Microsoft.Storage/storageAccounts"
+     },
+     {
+      "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess",
+      "equals": "true"
+     }
+    ]
+   },
+   "then": {
+    "effect": "deny"
+   }
+  }
+ },
+ "id": "/subscriptions/db1e31e0-b9ce-4b6e-b4d7-d800f47ec09f/providers/Microsoft.Authorization/policyDefinitions/7d0307f9-7fdb-4e1a-8fff-5a9626ca2826",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "7d0307f9-7fdb-4e1a-8fff-5a9626ca2826"
+}
