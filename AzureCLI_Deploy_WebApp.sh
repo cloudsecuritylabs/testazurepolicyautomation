@@ -6,3 +6,7 @@ ResourceGroupName='demo-cli'
 az group create --location eastus --name $ResourceGroupName
 az appservice plan create --name $webappname --resource-group $ResourceGroupName --sku Free
 az webapp create --name $webappname --resource-group $ResourceGroupName --plan $webappname
+
+
+#Finally delete resources when done
+az group delete --name $ResourceGroupName
