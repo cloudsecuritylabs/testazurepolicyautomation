@@ -3,7 +3,7 @@
 $ResourceGroupName = "demo-ps-multiple"
 $vmname="demo-vm"
 $location="East US"
-$NumberOfVms= 3
+$NumberOfVms= 2
 
 # Deploy VMs using powershell
 New-AzResourceGroup -Name $ResourceGroupName -Location $location
