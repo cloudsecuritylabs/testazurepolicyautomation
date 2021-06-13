@@ -7,7 +7,6 @@ $NumberOfVms= 2
 
 # Deploy VMs using powershell
 New-AzResourceGroup -Name $ResourceGroupName -Location $location
-New-AzAppServicePlan -Name $webappname -Location $location -ResourceGroupName $ResourceGroupName -Tier Standard
 
 # Create a loop
 $i=1
