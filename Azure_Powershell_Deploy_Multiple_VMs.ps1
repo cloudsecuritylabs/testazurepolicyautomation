@@ -1,6 +1,6 @@
 # Use the power of loop to create multiple VMs using Do-While Loop
 
-$ResourceGroupName = "demo-ps-multiple"
+$ResourceGroupName = "demo-ps-multiple-vm"
 $vmname="demo-vm"
 $location="East US"
 $NumberOfVms= 2
