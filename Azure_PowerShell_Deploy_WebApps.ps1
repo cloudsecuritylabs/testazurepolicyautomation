@@ -7,7 +7,7 @@ $NumberOfWebApps= 3
 
 # Deploy web apps using powershell
 New-AzResourceGroup -Name $ResourceGroupName -Location $location
-New-AzAppServicePlan -Name $webappname -Location $location -ResourceGroupName $ResourceGroupName -Tier Standard
+New-AzAppServicePlan -Name $webappname -Location $location -ResourceGroupName $ResourceGroupName -Tier Free
 
 # Create a loop
 $i=1
