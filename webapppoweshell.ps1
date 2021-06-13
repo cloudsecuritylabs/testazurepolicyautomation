@@ -7,4 +7,4 @@ New-AzAppServicePlan -Name $webappname -Location $location -ResourceGroupName $R
 New-AzWebApp -Name $webappname -Location $location -AppServicePlan $webappname -ResourceGroupName $ResourceGroupName
 
 #Detete stuff when done
-Remove-AzureRmResourceGroup -Name $ResourceGroupName -Force
+Remove-AzResourceGroup -Name $ResourceGroupName -Force
