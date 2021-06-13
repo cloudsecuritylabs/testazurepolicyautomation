@@ -1,5 +1,5 @@
 # sample DSC Script
-configuration webserverDSCsample
+configuration webserverDSCsampleFixed
 {   Node WebServerDemo 
   {      WindowsFeature IIS 
     {         Ensure = 'Present'         
